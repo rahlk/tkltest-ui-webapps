@@ -168,6 +168,9 @@
                             <goal>build-info</goal>
                         </goals>
                         <configuration>
+                            <agents>
+                                /home/rkrsn/workspace/tackle/tackle-axe/call-tracing-agent/build/libs/ctaagent-1.0-SNAPSHOT.jar
+                            </agents>
                             <additionalProperties>
                                 <encoding.source>${project.build.sourceEncoding}</encoding.source>
                                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
@@ -179,7 +182,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.version}</version>
@@ -191,7 +194,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin> -->
 
             <!--            <plugin>-->
 <!--                <groupId>org.jacoco</groupId>-->
